@@ -19,8 +19,8 @@ python test_client.py   # in a second terminal
 ```
 
 ## Auth and logging
-- Every request needs `key`. The key is checked against `ngwenyan_auth`, and only `123` is registered. A bad or missing key returns HTTP 401 with `code: 0`.
-- Every request, successful or not, is written to `ngwenyan_api_logs` (time, endpoint, key, query params, code, msg, sqltime, client IP).
+- Every request needs `key`. The key is checked against `ngwenyn_auth`, and only `123` is registered. A bad or missing key returns HTTP 401 with `code: 0`.
+- Every request, successful or not, is written to `ngwenyn_api_logs` (time, endpoint, key, query params, code, msg, sqltime, client IP).
 
 ## Endpoints
 | Endpoint | Params | Notes |
