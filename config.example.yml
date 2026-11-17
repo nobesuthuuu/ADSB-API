@@ -1,0 +1,9 @@
+mysql:
+    host: 'mysql.clarksonmsda.org'
+    port: 3306
+    user: ia626
+    password: 'YOUR_PASSWORD_HERE'
+    database: ia626
+    autocommit: true
+
+username: ngwenyn

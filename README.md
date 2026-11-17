@@ -8,11 +8,12 @@ A Flask web service over the `class_datapoints` ADSB table.
 | `app.py` | The API (all endpoints, auth, logging) |
 | `test_client.py` | Test client that calls every endpoint, including error cases |
 | `setup_db.py` | One-time creation of `ngwenyn_auth` and `ngwenyn_api_logs`, registers key `123` |
-| `config.yml` | DB credentials + table prefix (`username`) |
+| `config.example.yml` | Template for `config.yml` (DB credentials + table prefix). `config.yml` itself is not committed |
 
 ## Run
 ```bash
 pip install flask pymysql pyyaml requests
+cp config.example.yml config.yml   # then put the class DB password in config.yml
 python setup_db.py      # once
 python app.py           # server on http://127.0.0.1:5000
 python test_client.py   # in a second terminal
